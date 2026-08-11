@@ -1,0 +1,31 @@
+/* Layout Styles */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: var(--spacing-xl) 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}

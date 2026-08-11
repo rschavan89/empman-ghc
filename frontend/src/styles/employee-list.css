@@ -1,0 +1,39 @@
+/* Employee List Styles */
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background-color: var(--light-gray);
+  border-radius: var(--radius-lg);
+  border: 2px dashed var(--border-color);
+}
+
+.empty-state-message {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.empty-state-hint {
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .employee-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .employee-list {
+    grid-template-columns: 1fr;
+  }
+}

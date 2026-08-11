@@ -1,0 +1,142 @@
+/* Page Styles */
+
+.page {
+  flex-grow: 1;
+  padding: var(--spacing-xl) 0;
+  background-color: #fff;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.header-content {
+  flex-grow: 1;
+}
+
+.page-subtitle {
+  color: var(--text-light);
+  margin-bottom: 0;
+  font-size: var(--font-size-base);
+}
+
+.form-container {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.employee-detail {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-section {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.detail-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+}
+
+.detail-group-label {
+  font-weight: 600;
+  color: var(--text-light);
+  min-width: 150px;
+}
+
+.detail-group-value {
+  color: var(--text-dark);
+  word-break: break-word;
+  text-align: right;
+}
+
+.detail-group-value a {
+  color: var(--primary-color);
+}
+
+.detail-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.detail-actions button {
+  flex: 1;
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header button {
+    width: 100%;
+  }
+
+  .page-header h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  .form-container,
+  .employee-detail {
+    padding: var(--spacing-lg);
+    margin: 0 var(--spacing-md);
+  }
+
+  .detail-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-group-value {
+    text-align: left;
+    width: 100%;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .detail-actions button {
+    width: 100%;
+  }
+}

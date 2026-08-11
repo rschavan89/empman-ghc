@@ -1,0 +1,62 @@
+{
+  "validEmployee": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "department": "Engineering",
+    "salary": "85000"
+  },
+  "validEmployee2": {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "department": "Finance",
+    "salary": "75000"
+  },
+  "validEmployee3": {
+    "name": "Michael Johnson",
+    "email": "michael.johnson@example.com",
+    "department": "HR",
+    "salary": "65000"
+  },
+  "invalidEmailDuplicate": {
+    "name": "Duplicate Email",
+    "email": "john.doe@example.com",
+    "department": "Engineering",
+    "salary": "85000"
+  },
+  "invalidEmail": {
+    "name": "Invalid Email User",
+    "email": "notanemail",
+    "department": "Engineering",
+    "salary": "85000"
+  },
+  "invalidSalaryNegative": {
+    "name": "Invalid Salary User",
+    "email": "invalid.salary@example.com",
+    "department": "Engineering",
+    "salary": "-50000"
+  },
+  "invalidSalaryZero": {
+    "name": "Zero Salary User",
+    "email": "zero.salary@example.com",
+    "department": "Engineering",
+    "salary": "0"
+  },
+  "missingNameEmployee": {
+    "name": "",
+    "email": "no.name@example.com",
+    "department": "Engineering",
+    "salary": "85000"
+  },
+  "longNameEmployee": {
+    "name": "This is a very long employee name that might exceed character limits if the system has validation rules set for maximum name length to test boundary conditions",
+    "email": "long.name@example.com",
+    "department": "Engineering",
+    "salary": "85000"
+  },
+  "specialCharacterEmployee": {
+    "name": "José García-López",
+    "email": "special.chars@example.com",
+    "department": "Sales & Marketing",
+    "salary": "70000"
+  }
+}

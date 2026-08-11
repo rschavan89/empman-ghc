@@ -1,0 +1,97 @@
+# Backend .gitignore
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+.mvn/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.maven.properties
+
+# IDEs - VS Code
+.vscode/
+*.code-workspace
+.classpath
+.project
+.settings/
+.factorypath
+
+# IDEs - IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDEs - Eclipse
+.eclipse/
+bin/
+.classpath
+.project
+.settings/
+
+# IDEs - NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# Application Runtime
+*.log
+logs/
+*.pid
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+h2console/
+
+# Temporary Files
+temp/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Node (if needed)
+node_modules/
+npm-debug.log
+
+# Build outputs
+dist/
+build/
+
+# Runtime
+*.jar
+*.war
+
+# Test Coverage
+coverage/
+.coverage
+*.gcov
+
+# Docker
+.dockerignore
